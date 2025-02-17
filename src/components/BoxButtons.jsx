@@ -1,9 +1,6 @@
 import Button from "./Button"
 export default function BoxButtons(props) {
 
-    // salvo la props con una variabile
-    const languages = props.Language;
-
     // Ricevi le props dal padre
     const { Languages, activeButton, onToggle } = props;
 
