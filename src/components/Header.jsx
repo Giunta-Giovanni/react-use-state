@@ -3,8 +3,9 @@ export default function Header(props) {
 
     return (
         <header>
-            questo è l'header
-
+            <h1>
+                Learn Web Development
+            </h1>
         </header>
     );
 }
