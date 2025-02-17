@@ -1,0 +1,25 @@
+/* General */
+li {
+    list-style: none;
+}
+
+
+
+/* HEADER */
+header {
+    background-color: gray;
+    padding: 20px;
+}
+
+/* MAIN */
+main {
+    padding: 20px 0;
+}
+
+.box-btn ul {
+    display: flex;
+}
+
+.btn {
+    margin: 0 10px;
+}
