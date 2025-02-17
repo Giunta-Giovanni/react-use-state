@@ -1,5 +1,6 @@
 import BoxButtons from "./BoxButtons";
 import language from "../date/languages"
+import BoxText from "./BoxText";
 export default function Main() {
 
 
@@ -9,9 +10,7 @@ export default function Main() {
                 {/* parte pulsanti */}
                 <BoxButtons Language={language} />
                 {/* parte di testo */}
-                <div className="box-text">
-
-                </div>
+                <BoxText Language={language} />
             </div>
 
         </main >

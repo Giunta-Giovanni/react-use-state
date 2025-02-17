@@ -23,3 +23,10 @@ main {
 .btn {
     margin: 0 10px;
 }
+
+.box-text {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
