@@ -1,25 +1,24 @@
-import { useState } from "react";
 import Button from "./Button"
 export default function BoxButtons(props) {
 
     // salvo la props con una variabile
     const languages = props.Language;
 
-    // destructuring in useState
-    const [activeButton, setActiveButton] = useState(null)
+    // Ricevi le props dal padre
+    const { Languages, activeButton, onToggle } = props;
 
-
-    console.log(languages)
 
     return (
         < section className="box-btn" >
             <ul>
 
-                {languages.map(language => (
+                {Languages.map(language => (
                     <Button
                         key={language.id}
                         title={language.title}
-                        onToggle={() => setActiveButton(language.id)}
+                        // Passa la funzione dal padre
+                        onToggle={() => onToggle(language.id)}
+                        // Passa lo stato dal padre
                         isActive={activeButton === language.id}
                     />
                 ))}
