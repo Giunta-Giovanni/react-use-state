@@ -1,9 +1,13 @@
+export default function BoxText(props) {
+    const { Language, activeButton } = props;
 
-export default function BoxText() {
+    const lingua = Language.find(lingua => { return lingua.id === activeButton })
+    console.log(lingua)
+
     return (
         < section className="box-text" >
-            <h2>Titolo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus, commodi accusamus exercitationem ab repellat? Animi assumenda, vero quis ad est illum necessitatibus dolores dolore accusamus ipsam! Et, nemo praesentium.</p>
+            <h2>{lingua ? lingua.title : "Non Hai selezionato nessuna lingua"}</h2>
+            <p>{lingua ? lingua.description : "Formica"}</p>
         </section >
     )
 }
